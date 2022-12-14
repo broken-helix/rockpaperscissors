@@ -1,108 +1,186 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Rock, Paper, Scissors**
+## **Site Overview**
 
-Welcome USER_NAME,
+Text
+​
+![Responsive Screenshot](/url.jpg)
+***
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of contents:
+1. [**Site Overview**](#site-overview)
+1. [**Planning stage**](#planning-stage)
+    * [***Target Audiences***](#target-audiences)
+    * [***User Stories***](#user-stories)
+    * [***Site Aims***](#site-aims)
+    * [***Color Scheme***](#color-scheme)
+    * [***Typography**](#typography)
+1. [**Current Features**](#current-features)
+    * [***Header Section:***](#header-section)
+    * [***Page Title:***](#page-title)
+    * [***Navigation Bar***](#navigation-bar)
+    * [***Header Image***](#header-image)
+    * [***About Section***](#about-section)
+    * [***Why Fly Section***](#why-fly-section)
+    * [***Events Section***](#events-section)
+    * [***Contact Section***](#contact-section)
+    * [**Footer**](#footer)
+1. [**Future-Enhancements**](#future-enhancements)
+1. [**Testing Phase**](#testing-phase)
+1. [**Deployment**](#deployment)
+1. [**Tech**](#tech)
+1. [**Credits**](#credits)
+    * [**Honorable mentions**](#honorable-mentions)
+    * [**General reference**](#general-reference)
+    * [**Content**](#content)
+    * [**Media**](#media)
+***
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## **Planning stage**
+### **Target Audiences:**
 
-## Gitpod Reminders
+* Children who want to play a simple computer game.
+* People who want to play a game of Rock, Paper, Scissors.
+***
+### **User Stories:**
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+* As a user, I want to be able to play the game.
+* As a user, I want the process of playing the game to be intuitive.
+* As a user, I want to believe the game is one of chance.
+* As a user, I want to be able to easily share the game with friends.
+***
 
-`python3 -m http.server`
+### **Site Aims:**
 
-A blue button should appear to click: _Make Public_,
+* To introduce the user to the Rock, Paper, Scissors game.
+* For playing the game to be simple and intuitive.
+* To keep a record of the total score.
+* To provide the user with a clear indication of who won.
+***
 
-Another blue button should appear to click: _Open Browser_.
+### **Color Scheme:**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The color scheme was designed to incorporate blues reds and greens, to indicate win and loss results, along with complementary colors.
+Colors were selected using the coolors color palette generator.  <br><br>
 
-A blue button should appear to click: _Make Public_,
+![Coolors Palette](/docs/url.jpg)
+***
 
-Another blue button should appear to click: _Open Browser_.
+## **Typography**
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* Font selection
+***
 
-To log into the Heroku toolbelt CLI:
+## **Current Features**
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### *Header Section:*
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* The Header section
 
-------
+#### *Page Title:*
 
-## Release History
+* The H1 page title
+​
+#### *Navigation Bar:*
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* Exists?
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![Mobile Header](/url.jpg)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Desktop Header](/url.jpg)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+#### *Header Image*
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* The header image?
+​
+#### *Section:*
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+#### *Section:*
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+#### *Section:*
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+#### *Section*
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+*
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+#### *Section*
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* The footer section contains links to social media platforms
+* The icons were sourced from FontAwesome.
+***
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## **Future-Enhancements**
 
-------
+* 
+***
 
-## FAQ about the uptime script
+## **Testing Phase**
 
-**Why have you added this script?**
+* Responsiveness - The page was tested for responsiveness on screen sizes throughout the development stages, using chrome dev tools, which allowed the page to be adjusted to display on small and large screen sizes.  The site was also tested using firefox on a desktop, on an android mobile phone using chrome, on an ipad and iphone 6 using safari and found to display correctly.
+​
+* Functionality - The links in the navigation have been selected individually to ensure they connect to the correct sections.  The form has been submitted without each input being completed to ensure that error messages are displayed, including entering email addresses without the '@' symbol.  The form has been submitted with correct entries to ensure that the Thank You page is displayed after submission.  The link returning users to the main page has been selected to make sure it is functioning correctly.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+* Contrast - The contrast on the page was checked using the WCAG Color contrast checker plugin in chrome and found to pass the tests.
 
-**How will this affect me?**
+![wcag color contrast checker results](/url.jpg)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+* Lighthouse - The site was checked using the Lighthouse chrome plugin and found to pas the tests.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+![lighthouse results](/url.jpg)
+​
+* Validators
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+![html validator](/docs/html-validator.jpg)
 
-**So….?**
+![css validator](/docs/css-validation.jpg)
+***
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## **Bugs**
 
-**Can I opt out?**
+* Issue - 
+* Cause - 
+* Resolution -  
+***
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## **Deployment**
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+I deployed the page on GitHub pages via the following procedure:
+​
+1. From the project's [repository](https://github.com/broken-helix/url), go to the **Settings** tab.
+2. From the left-hand menu, select the **Pages** tab.
+3. Under the **Source** section, select the **Main** branch from the drop-down menu and click **Save**.
+4. A message will be displayed to indicate a successful deployment to GitHub pages and provide the live link.
+​
+The live site can be found at the following URL - [Forest Hill Flyers](https://broken-helix.github.io/url/).
+***
 
-**Anything more?**
+## **Tech**
+​
+The following technologies were employed in the creation of the site:
+​
+- HTML
+- CSS
+- JS
+***
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## **Credits**
 
----
+### **Honorable mentions**
 
-Happy coding!
+* 
+***
+
+### **Content:**
+
+* Fonts were sourced from [Google Fonts](https://fonts.google.com/).
+
+* Icons for the social media links and why fly section were sourced from [Font Awesome](https://fontawesome.com/icons).
+
+### **Media:**
+
+* sources
