@@ -29,3 +29,15 @@ body {
     flex-direction: row;
     justify-content: center;
 }
+
+.results-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.score-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
