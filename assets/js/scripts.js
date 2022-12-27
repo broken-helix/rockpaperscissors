@@ -10,6 +10,7 @@ for (let button of buttons) {
 
 function runGame(gameType) {
     displayUserChoice(gameType);
+    calculateComputerChoice();
 }
 
 
@@ -24,7 +25,16 @@ function displayUserChoice(gameType) {
 }
 
 function calculateComputerChoice() {
-    
+    let computerChoice = Math.floor(Math.random() * 3);
+    console.log(computerChoice);
+    if (computerChoice === 0) {
+        document.getElementById("computer-choice").innerHTML = '<i class="fa-regular fa-hand-back-fist"></i>';
+    } else if (computerChoice === 1) {
+        document.getElementById("computer-choice").innerHTML = '<i class="fa-regular fa-hand"></i>';
+    } else if (computerChoice === 2) {
+        document.getElementById("computer-choice").innerHTML = '<i class="fa-regular fa-hand-scissors"></i>';
+    }
+
 }
 
 function compareChoices() {
