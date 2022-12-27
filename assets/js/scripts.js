@@ -1,12 +1,22 @@
-function runGame() {
+const buttons = document.getElementsByClassName("btn");
 
+for (let button of buttons) {
+    button.addEventListener("click", function() {
+        let gameType = this.getAttribute("id");
+        runGame(gameType);
+    });
 }
 
-function displayUserChoice() {
-
+function runGame(gameType) {
+    
 }
 
-function calculateComputerChoice(){
+
+function displayUserChoice(gameType) {
+    
+}
+
+function calculateComputerChoice() {
 
 }
 
@@ -19,5 +29,5 @@ function displayWinner() {
 }
 
 function incrementScores() {
-    
+
 }

@@ -63,3 +63,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.fa-regular, .fa-solid {
+    font-size: 40px;
+}
