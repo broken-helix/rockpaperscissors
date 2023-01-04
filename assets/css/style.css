@@ -16,6 +16,20 @@ body {
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+/* Game area */
 .game-area {
     background-color: #E6ECF0;
     box-sizing: border-box;
@@ -24,41 +38,7 @@ body {
     margin-right: auto;
 }
 
-.controls-area {
-    display: flex;
-    flex-direction: column;
-}
-
-.weapons {
-    display: flex;
-}
-
-.results-area {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-}
-
-.choices-area {
-    display: flex;
-    justify-content: space-around;
-}
-
-.game-state-area {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.btn {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: white;
-    border: 5px solid;
-    margin: 5px;
-}
-
+/* Flexbox styling for Controls and Game-State areas */
 .thirds {
     width: 33%;
     display: flex;
@@ -67,44 +47,78 @@ body {
     flex-direction: column;
 }
 
+/* Controls area */
+.controls-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls-area .fa-regular {
+    font-size: 40px;
+}
+
+.weapons {
+    display: flex;
+    margin: 10px 0 20px 0;
+}
+
+.btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #FBFEFB;
+    border: 5px solid;
+    margin: 0 10px;
+}
+
+/* Game selection display area */
+.choices-area {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
 .halves {
     justify-content: center;
     flex-direction: column;
+}
+
+.halves h3 {
+    font-size: 20px;
 }
 
 .choices {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 5px solid;
-    margin: 5px;
+    border: 7px solid;
+    margin: 5px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.fa-regular, .fa-solid {
-    font-size: 40px;
+.choices .fa-regular, .choices .fa-solid {
+    font-size: 70px;
 }
 
-.choices > .fa-regular, .choices > .fa-solid {
-    font-size: 80px;
-}
-
-#game-result {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 10px solid;
-    align-items: center;
-    justify-content: center;
+/* Points tally and game results area */
+.game-state-area {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scores h3 {
+    font-size: 17px;
+    margin-bottom: 20px;
 }
 
 .scores {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 #win-state {
@@ -112,11 +126,12 @@ body {
     height: 80px;
     border-radius: 50%;
     border: 5px solid;
-    margin: 5px;
+    margin: 5px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 35px;
+    font-weight: 700;
 }
 
 .points {
@@ -129,4 +144,238 @@ body {
     width:  70px;
     height: 80px;
     border-radius: 20%;
+}
+
+/* Media Queries for responsive layout */
+@media screen and (min-width: 500px) {
+    .btn {
+        width: 100px;
+        height: 100px;
+        border: 6px solid;
+    }
+
+    .controls-area .fa-regular {
+        font-size: 50px;
+    }
+
+    .choices {
+        width: 150px;
+        height: 150px;
+        border: 8px solid;
+    }
+
+    .choices .fa-regular, .choices .fa-solid {
+        font-size: 90px;
+    }
+
+    .points {
+        font-size: 80px;
+        border: 6px solid;
+        margin: 5px;
+        width: 80px;
+        height: 90px;
+    }
+
+    #win-state {
+        width: 90px;
+        height: 90px;
+        border: 6px solid;
+        margin: 5px 40px;
+        font-size: 35px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .halves h3 {
+        font-size: 25px;
+    }
+
+    .scores h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .btn {
+        width: 120px;
+        height: 120px;
+        border: 8px solid;
+    }
+    
+    .controls-area .fa-regular {
+        font-size: 60px;
+    }
+
+    .choices {
+        width: 180px;
+        height: 180px;
+        border: 10px solid;
+    }
+
+    .choices .fa-regular, .choices .fa-solid {
+        font-size: 110px;
+    }
+
+    .points {
+        font-size: 90px;
+        border: 8px solid;
+        margin: 5px;
+        width: 90px;
+        height: 100px;
+    }
+
+    #win-state {
+        width: 100px;
+        height: 100px;
+        border: 8px solid;
+        margin: 5px 50px;
+        font-size: 40px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    .halves h3 {
+        font-size: 30px;
+    }
+
+    .scores h3 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .btn {
+        width: 160px;
+        height: 160px;
+        border: 10px solid;
+    }
+
+    .controls-area .fa-regular {
+        font-size: 90px;
+    }
+
+    .choices {
+        width: 240px;
+        height: 240px;
+        border: 12px solid;
+    }
+
+    .choices .fa-regular, .choices .fa-solid {
+        font-size: 150px;
+    }
+
+    .points {
+        font-size: 100px;
+        border: 10px solid;
+        margin: 5px;
+        width: 100px;
+        height: 110px;
+    }
+
+    #win-state {
+        width: 110px;
+        height: 110px;
+        border: 10px solid;
+        margin: 5px 80px;
+        font-size: 45px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .halves h3 {
+        font-size: 35px;
+    }
+
+    .scores h3 {
+        font-size: 25px;
+    }
+}
+
+/* Responsive design for narrow screen sizes */
+@media screen and (max-width: 300px) {
+    .btn {
+        width: 60px;
+        height: 60px;
+        border: 3px solid;
+    }
+
+    .controls-area .fa-regular {
+        font-size: 30px;
+    }
+
+    .choices {
+        width: 75px;
+        height: 75px;
+        border: 3px solid;
+        margin: 5px 10px
+    }
+
+    .choices .fa-regular, .choices .fa-solid {
+        font-size: 40px;
+    }
+
+    .points {
+        font-size: 50px;
+        border: 3px solid;
+        width: 50px;
+        height: 60px;
+    }
+
+    #win-state {
+        width: 60px;
+        height: 60px;
+        border: 3px solid;
+        margin: 5px 20px;
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .halves h3 {
+        font-size: 15px;
+    }
+
+    .scores h3 {
+        font-size: 15px;
+    }  
 }
