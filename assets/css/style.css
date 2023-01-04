@@ -26,13 +26,11 @@ body {
 
 .controls-area {
     display: flex;
-    justify-content: center;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .weapons {
     display: flex;
-    
 }
 
 .results-area {
@@ -46,8 +44,10 @@ body {
     justify-content: space-around;
 }
 
-.score-area {
+.game-state-area {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .btn {
@@ -55,7 +55,7 @@ body {
     height: 80px;
     border-radius: 50%;
     background-color: white;
-    border: 10px solid;
+    border: 5px solid;
     margin: 5px;
 }
 
@@ -76,7 +76,7 @@ body {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 10px solid;
+    border: 5px solid;
     margin: 5px;
     display: flex;
     justify-content: center;
@@ -91,22 +91,42 @@ body {
     font-size: 80px;
 }
 
-#win-state {
-    font-size: 32px;
-    font-weight: bold;
+#game-result {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: white;
     border: 10px solid;
-    margin: 5px;
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
 .scores {
-    width: 33%;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+}
+
+#win-state {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.points {
+    font-size: 70px;
+    border: 5px solid;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:  70px;
+    height: 80px;
+    border-radius: 20%;
 }
