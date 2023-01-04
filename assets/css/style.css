@@ -67,3 +67,7 @@ body {
 .fa-regular, .fa-solid {
     font-size: 40px;
 }
+
+#win-state {
+    font-size: 32px;
+}
