@@ -11,14 +11,20 @@ for (let button of buttons) {
 function displayUserChoice(gameType) {
     if (gameType === "rock") {
         document.getElementById("user-choice").innerHTML = '<i class="fa-regular fa-hand-back-fist"></i>';
+        document.getElementById("paper").style = "";
+        document.getElementById("scissors").style = "";
     } else if (gameType === "paper") {
         document.getElementById("user-choice").innerHTML = '<i class="fa-regular fa-hand"></i>';
+        document.getElementById("rock").style = "";
+        document.getElementById("scissors").style = "";
     } else if (gameType === "scissors") {
         document.getElementById("user-choice").innerHTML = '<i class="fa-regular fa-hand-scissors"></i>';
+        document.getElementById("paper").style = "";
+        document.getElementById("rock").style = "";
     }
 };
 
-function calculateComputerChoice(computerChoice) {
+function calculateComputerChoice() {
 
     computerChoice = Math.floor(Math.random() * 3);
 
@@ -59,9 +65,7 @@ function runGame(gameType, computerChoice) {
     } 
     
     incrementScores();
-};
 
-function displayWinner() {
 
 };
 

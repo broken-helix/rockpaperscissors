@@ -72,6 +72,14 @@ h3 {
     margin: 0 10px;
 }
 
+.btn:hover {
+    color: #40798C;
+}
+
+.btn:focus {
+    color: #21B619;
+}
+
 /* Game selection display area */
 .choices-area {
     display: flex;
@@ -82,6 +90,8 @@ h3 {
 .halves {
     justify-content: center;
     flex-direction: column;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
 }
 
 .halves h3 {
