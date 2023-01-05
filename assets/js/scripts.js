@@ -1,4 +1,9 @@
 const buttons = document.getElementsByClassName("btn");
+const computerChoiceElement = document.getElementById("computer-choice");
+const playerChoiceElement = document.getElementById("user-choice");
+const rockSymbol = '<i class="fa-regular fa-hand-back-fist"></i>';
+const paperSymbol = '<i class="fa-regular fa-hand"></i>';
+const scissorsSymbol = '<i class="fa-regular fa-hand-scissors"></i>';
 
 for (let button of buttons) {
     button.addEventListener("click", function() {
@@ -10,44 +15,37 @@ for (let button of buttons) {
 
 function displayUserChoice(gameType) {
     if (gameType === "rock") {
-        document.getElementById("user-choice").innerHTML = '<i class="fa-regular fa-hand-back-fist"></i>';
-        document.getElementById("paper").style = "";
-        document.getElementById("scissors").style = "";
+        playerChoiceElement.innerHTML = rockSymbol;
+        paperSymbol.style = "";
+        scissorsSymbol.style = "";
     } else if (gameType === "paper") {
-        document.getElementById("user-choice").innerHTML = '<i class="fa-regular fa-hand"></i>';
-        document.getElementById("rock").style = "";
-        document.getElementById("scissors").style = "";
+        playerChoiceElement.innerHTML = paperSymbol;
+        rockSymbol.style = "";
+        scissorsSymbol.style = "";
     } else if (gameType === "scissors") {
-        document.getElementById("user-choice").innerHTML = '<i class="fa-regular fa-hand-scissors"></i>';
-        document.getElementById("paper").style = "";
-        document.getElementById("rock").style = "";
+        playerChoiceElement.innerHTML = scissorsSymbol;
+        paperSymbol.style = "";
+        rockSymbol.style = "";
     }
 };
 
 function calculateComputerChoice() {
-
     computerChoice = Math.floor(Math.random() * 3);
-
     if (computerChoice === 0) {
-        document.getElementById("computer-choice").innerHTML = '<i class="fa-regular fa-hand-back-fist"></i>';
+        computerChoiceElement.innerHTML = rockSymbol;
         computerChoice = "rock";
-
     } else if (computerChoice === 1) {
-        document.getElementById("computer-choice").innerHTML = '<i class="fa-regular fa-hand"></i>';
+        computerChoiceElement.innerHTML = paperSymbol;
         computerChoice = "paper";
-
     } else if (computerChoice === 2) {
-        document.getElementById("computer-choice").innerHTML = '<i class="fa-regular fa-hand-scissors"></i>';
+        computerChoiceElement.innerHTML = scissorsSymbol;
         computerChoice = "scissors";
     }
-
     return computerChoice;
 };
 
 function runGame(gameType, computerChoice) {
-
     displayUserChoice(gameType);
-
     if (gameType === computerChoice) {
         document.getElementById("win-state").innerText = "DRAW";
     } else if (gameType === "rock" && computerChoice === "paper") {
@@ -62,18 +60,14 @@ function runGame(gameType, computerChoice) {
         document.getElementById("win-state").innerText = "LOSE";
     } else if (gameType === "scissors" && computerChoice === "paper") {
         document.getElementById("win-state").innerText = "WIN";
-    } 
-    
+    }    
     incrementScores();
-
-
 };
 
 function incrementScores() {
     let userScore = parseInt(document.getElementById("user-score").innerText);
     let computerScore = parseInt(document.getElementById("computer-score").innerText);
     let winState = document.getElementById("win-state");
-
     if (winState.innerText === "WIN") {
         document.getElementById("user-score").innerText = ++userScore;
     } else if (winState.innerText === "LOSE") {
