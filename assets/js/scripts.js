@@ -11,6 +11,9 @@ for (let button of buttons) {
         button.classList.add("active");
         let computerChoice = calculateComputerChoice();
         runGame(gameType, computerChoice);
+        setTimeout(() => {
+            button.classList.remove("active");
+        }, 2000);
     });
 };
 
