@@ -4,12 +4,14 @@ const playerChoiceElement = document.getElementById("user-choice");
 const rockSymbol = '<i class="fa-regular fa-hand-back-fist"></i>';
 const paperSymbol = '<i class="fa-regular fa-hand"></i>';
 const scissorsSymbol = '<i class="fa-regular fa-hand-scissors"></i>';
+const defaultSymbol = '<i class="fa-solid fa-question"></i>';
 
 for (let button of buttons) {
     button.addEventListener("click", function() {
         let gameType = this.getAttribute("id");
         button.classList.add("active");
         runGame(gameType);
+        computerChoiceElement.innerHTML = defaultSymbol;
         setTimeout(() => {
             button.classList.remove("active");
         }, 2000);
