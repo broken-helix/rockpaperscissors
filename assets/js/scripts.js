@@ -8,6 +8,7 @@ const scissorsSymbol = '<i class="fa-regular fa-hand-scissors"></i>';
 for (let button of buttons) {
     button.addEventListener("click", function() {
         let gameType = this.getAttribute("id");
+        button.classList.add("active");
         let computerChoice = calculateComputerChoice();
         runGame(gameType, computerChoice);
     });
