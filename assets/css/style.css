@@ -145,6 +145,18 @@ h3 {
     font-weight: 700;
 }
 
+.win {
+    color: #21B619;
+}
+
+.lose {
+    color: #F72C25;
+}
+
+.draw {
+    color: #F7B32B;
+}
+
 .points {
     font-size: 70px;
     border: 5px solid;

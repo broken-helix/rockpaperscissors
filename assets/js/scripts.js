@@ -5,6 +5,7 @@ const rockSymbol = '<i class="fa-regular fa-hand-back-fist"></i>';
 const paperSymbol = '<i class="fa-regular fa-hand"></i>';
 const scissorsSymbol = '<i class="fa-regular fa-hand-scissors"></i>';
 const defaultSymbol = '<i class="fa-solid fa-question"></i>';
+const winState = document.getElementById("win-state");
 
 for (let button of buttons) {
     button.addEventListener("click", function() {
@@ -15,6 +16,10 @@ for (let button of buttons) {
         setTimeout(() => {
             button.classList.remove("active");
         }, 2000);
+        winState.innerHTML = defaultSymbol;
+        winState.classList.remove("win");
+        winState.classList.remove("lose");
+        winState.classList.remove("draw");
     });
 };
 
@@ -54,19 +59,26 @@ function runGame(gameType, computerChoice) {
     setTimeout(() => {
         computerChoice = calculateComputerChoice();
         if (gameType === computerChoice) {
-            document.getElementById("win-state").innerText = "DRAW";
+            winState.innerText = "DRAW";
+            winState.classList.add("draw");
         } else if (gameType === "rock" && computerChoice === "paper") {
-            document.getElementById("win-state").innerText = "LOSE";
+            winState.innerText = "LOSE";
+            winState.classList.add("lose");
         } else if (gameType === "rock" && computerChoice === "scissors") {
-            document.getElementById("win-state").innerText = "WIN";
+            winState.innerText = "WIN";
+            winState.classList.add("win");
         } else if (gameType === "paper" && computerChoice === "rock") {
-            document.getElementById("win-state").innerText = "WIN";
+            winState.innerText = "WIN";
+            winState.classList.add("win");
         } else if (gameType === "paper" && computerChoice === "scissors") {
-            document.getElementById("win-state").innerText = "LOSE";
+            winState.innerText = "LOSE";
+            winState.classList.add("lose");
         } else if (gameType === "scissors" && computerChoice === "rock") {
-            document.getElementById("win-state").innerText = "LOSE";
+            winState.innerText = "LOSE";
+            winState.classList.add("lose");
         } else if (gameType === "scissors" && computerChoice === "paper") {
-            document.getElementById("win-state").innerText = "WIN";
+            winState.innerText = "WIN";
+            winState.classList.add("win");
         }    
     incrementScores();
     }, 2000);
