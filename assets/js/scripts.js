@@ -17,16 +17,16 @@ for (let button of buttons) {
 function displayUserChoice(gameType) {
     if (gameType === "rock") {
         playerChoiceElement.innerHTML = rockSymbol;
-        paperSymbol.style = "";
-        scissorsSymbol.style = "";
+        document.getElementById("paper").classList.remove("active");
+        document.getElementById("scissors").classList.remove("active");
     } else if (gameType === "paper") {
         playerChoiceElement.innerHTML = paperSymbol;
-        rockSymbol.style = "";
-        scissorsSymbol.style = "";
+        document.getElementById("rock").classList.remove("active");
+        document.getElementById("scissors").classList.remove("active");
     } else if (gameType === "scissors") {
         playerChoiceElement.innerHTML = scissorsSymbol;
-        paperSymbol.style = "";
-        rockSymbol.style = "";
+        document.getElementById("paper").classList.remove("active");
+        document.getElementById("rock").classList.remove("active");
     }
 };
 
