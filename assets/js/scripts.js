@@ -18,22 +18,18 @@ for (let button of buttons) {
         if (canPlay) {
             canPlay = false;
             button.classList.add("active");
-            button.style.borderColor = "#000";
             let gameType = this.getAttribute("id");
-            button.classList.add("active");
-            button.style.borderColor = "#000";
             runGame(gameType);
             computerChoiceElement.innerHTML = defaultSymbol;
             setTimeout(() => {
                 button.classList.remove("active");
-                button.style.borderColor = "#000";
                 canPlay = true;
             }, 700);
         }
         winState.innerHTML = defaultSymbol;
         winState.classList.remove("win","lose", "draw");
-        playerChoiceElement.classList.remove("winning-score", "losing-score", "draw");
-        computerChoiceElement.classList.remove("winning-score", "losing-score", "draw");
+        playerChoiceElement.classList.remove("winning-score", "losing-score", "equal-score");
+        computerChoiceElement.classList.remove("winning-score", "losing-score", "equal-score");
     });
 };
 
@@ -75,19 +71,16 @@ function runGame(gameType, computerChoice) {
         if (gameType === computerChoice) {
             winState.innerText = "DRAW";
             winState.classList.add("draw");
-            winState.style.borderColor = "#000";
         } else if ((gameType === "rock" && computerChoice === "paper") || 
             (gameType === "paper" && computerChoice === "scissors") || 
             (gameType === "scissors" && computerChoice === "rock")) {
             winState.innerText = "LOSE";
             winState.classList.add("lose");
-            winState.style.borderColor = "#000";
         } else if ((gameType === "rock" && computerChoice === "scissors") || 
             (gameType === "paper" && computerChoice === "rock") || 
             (gameType === "scissors" && computerChoice === "paper")) {
             winState.innerText = "WIN";
             winState.classList.add("win");
-            winState.style.borderColor = "#000";
         }
     incrementScores();
     }, 700);
@@ -102,14 +95,10 @@ function incrementScores() {
         userScoreElement.innerText = ++userScore;
         playerChoiceElement.classList.add("winning-score");
         computerChoiceElement.classList.add("losing-score");
-        userScoreElement.style.borderColor = "#000";
-        computerScoreElement.style.borderColor = "#000";
     } else if (winState.innerText === "LOSE") {
         computerScoreElement.innerText = ++computerScore;
         playerChoiceElement.classList.add("losing-score");
         computerChoiceElement.classList.add("winning-score");
-        userScoreElement.style.borderColor = "#000";
-        computerScoreElement.style.borderColor = "#000";
     } else if (winState.innerText === "DRAW") {
         playerChoiceElement.classList.add("draw");
         computerChoiceElement.classList.add("draw");
@@ -119,22 +108,16 @@ function incrementScores() {
         computerScoreElement.classList.remove("winning-score", "losing-score");
         userScoreElement.classList.add("equal-score");
         computerScoreElement.classList.add("equal-score");
-        userScoreElement.style.borderColor = "#000";
-        computerScoreElement.style.borderColor = "#000";
     } else if (userScore > computerScore) {
         userScoreElement.classList.remove("winning-score", "losing-score", "equal-score");
         computerScoreElement.classList.remove("winning-score", "losing-score", "equal-score");
         userScoreElement.classList.add("winning-score");
         computerScoreElement.classList.add("losing-score");
-        userScoreElement.style.borderColor = "#000";
-        computerScoreElement.style.borderColor = "#000";
     } else if (computerScore > userScore) {
         userScoreElement.classList.remove("winning-score", "losing-score", "equal-score");
         computerScoreElement.classList.remove("winning-score", "losing-score", "equal-score");
         userScoreElement.classList.add("losing-score");
         computerScoreElement.classList.add("winning-score");
-        userScoreElement.style.borderColor = "#000";
-        computerScoreElement.style.borderColor = "#000";
     }
 };
 

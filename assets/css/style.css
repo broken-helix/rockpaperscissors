@@ -103,7 +103,7 @@ h3 {
     width: 7.5rem;
     height: 7.5rem;
     border-radius: 50%;
-    border: 0.438rem solid;
+    border: 0.438rem solid #000;
     margin: 0.313rem 1.25rem;
     display: flex;
     justify-content: center;
@@ -120,7 +120,6 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 140px;
 }
 
 .scores h3 {
@@ -138,7 +137,7 @@ h3 {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    border: 0.313rem solid;
+    border: 0.313rem solid #000;
     margin: 0.313rem 2.5rem;
     display: flex;
     justify-content: center;
@@ -165,7 +164,7 @@ h3 {
 
 .points {
     font-size: 70px;
-    border: 5px solid;
+    border: 5px solid #000;
     margin: 5px;
     display: flex;
     justify-content: center;
@@ -192,7 +191,7 @@ h3 {
 }
 
 #reset {
-    border: 2px solid;
+    border: 2px solid #000;
     font-size: 10px;
     padding: 5px;
 }
@@ -202,7 +201,7 @@ h3 {
     .btn {
         width: 6.25rem;
         height: 6.25rem;
-        border: 0.375rem solid;
+        border-width: 0.375rem;
     }
 
     .controls-area .fa-regular {
@@ -212,7 +211,7 @@ h3 {
     .choices {
         width: 9.375rem;
         height: 9.375rem;
-        border: 0.5rem solid;
+        border-width: 0.5rem;
     }
 
     .choices .fa-regular, .choices .fa-solid {
@@ -221,7 +220,7 @@ h3 {
 
     .points {
         font-size: 5rem;
-        border: 0.375rem solid;
+        border-width: 0.375rem;
         margin: 5px;
         width: 5rem;
         height: 5.625rem;
@@ -230,7 +229,7 @@ h3 {
     #win-state {
         width: 5.625rem;
         height: 5.625rem;
-        border: 0.375rem solid;
+        border-width: 0.375rem;
         margin: 0.313rem 2.5rem;
         font-size: 2.188rem;
     }
@@ -260,7 +259,7 @@ h3 {
     .btn {
         width: 7.5rem;
         height: 7.5rem;
-        border: 0.5rem solid;
+        border-width: 0.5rem;
     }
     
     .controls-area .fa-regular {
@@ -270,7 +269,7 @@ h3 {
     .choices {
         width: 11.25rem;
         height: 11.25rem;
-        border: 0.625rem solid;
+        border-width: 0.625rem;
     }
 
     .choices .fa-regular, .choices .fa-solid {
@@ -279,7 +278,7 @@ h3 {
 
     .points {
         font-size: 5.625rem;
-        border: 0.5rem solid;
+        border-width: 0.5rem;
         margin: 0.313rem;
         width: 5.625rem;
         height: 6.25rem;
@@ -288,7 +287,7 @@ h3 {
     #win-state {
         width: 6.25rem;
         height: 6.25rem;
-        border: 0.5rem solid;
+        border-width: 0.5rem;
         margin: 0.313rem 3.125rem;
         font-size: 2.5rem;
     }
@@ -318,7 +317,7 @@ h3 {
     .btn {
         width: 10rem;
         height: 10rem;
-        border: 0.625rem solid;
+        border-width: 0.625rem;
     }
 
     .controls-area .fa-regular {
@@ -328,7 +327,7 @@ h3 {
     .choices {
         width: 15rem;
         height: 15rem;
-        border: 0.75rem solid #000;
+        border-width: 0.75rem;
     }
 
     .choices .fa-regular, .choices .fa-solid {
@@ -337,7 +336,7 @@ h3 {
 
     .points {
         font-size: 6.25rem;
-        border: 0.625rem solid;
+        border-width: 0.625rem;
         margin: 0.313rem;
         width: 6.25rem;
         height: 6.875rem;
@@ -346,7 +345,7 @@ h3 {
     #win-state {
         width: 6.875rem;
         height: 6.875rem;
-        border: 0.625rem solid;
+        border-width: 0.625rem;
         margin: 0.313rem 5rem;
         font-size: 2.813rem;
     }
@@ -395,7 +394,7 @@ h3 {
     .btn {
         width: 3.75rem;
         height: 3.75rem;
-        border: 0.188rem solid;
+        border-width: 0.188rem;
     }
 
     .controls-area .fa-regular {
@@ -405,7 +404,7 @@ h3 {
     .choices {
         width: 4.688rem;
         height: 4.688rem;
-        border: 0.188rem solid;
+        border-width: 0.188rem;
         margin: 0.313rem 0.625rem;
     }
 
@@ -415,7 +414,7 @@ h3 {
 
     .points {
         font-size: 3.125rem;
-        border: 0.188rem solid;
+        border-width: 0.188rem;
         width: 3.125rem;
         height: 3.75rem;
     }
@@ -423,7 +422,7 @@ h3 {
     #win-state {
         width: 3.75rem;
         height: 3.75rem;
-        border: 0.188rem solid;
+        border-width: 0.188rem;
         margin: 0.313rem 1.25rem;
         font-size: 1.563rem;
     }
@@ -454,7 +453,7 @@ h3 {
     .btn {
         width: 3.125rem;
         height: 3.125rem;
-        border: 0.125rem solid;
+        border-width: 0.125rem;
         margin: 0.188rem;
     }
 
@@ -465,7 +464,7 @@ h3 {
     .choices {
         width: 4.063rem;
         height: 4.063rem;
-        border: 0.125rem solid;
+        border-width: 0.125rem;
         margin: 0 0.625rem;
     }
 
@@ -475,7 +474,7 @@ h3 {
 
     .points {
         font-size: 2.188rem;
-        border: 0.125rem solid;
+        border-width: 0.125rem;
         width: 2.188rem;
         height: 2.813rem;
     }
@@ -483,7 +482,7 @@ h3 {
     #win-state {
         width: 2.183rem;
         height: 2.183rem;
-        border: 0.125rem solid;
+        border-width: 0.125rem;
         font-size: 1.25rem;
     }
 
@@ -521,7 +520,7 @@ h3 {
         height: 100px;
         border-radius: 50%;
         background-color: #fff;
-        border: 0.313rem solid #000;
+        border-width: 0.313rem;
         margin: 0 10px;
     }
     .controls-area .fa-regular {
@@ -534,21 +533,21 @@ h3 {
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        border: 0.438rem solid;
+        border-width: 0.438rem;
     }
     .choices .fa-regular, .choices .fa-solid {
         font-size: 90px;
     }
     .points {
         font-size: 50px;
-        border: 0.188rem solid;
+        border-width: 0.188rem;
         width: 50px;
         height: 60px;
     }
     #win-state {
         width: 60px;
         height: 60px;
-        border: 0.188rem solid;
+        border-width: 0.188rem;
         font-size: 25px;
     }
 }
