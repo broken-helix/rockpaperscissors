@@ -1,11 +1,14 @@
 const buttons = document.getElementsByClassName("btn");
 const computerChoiceElement = document.getElementById("computer-choice");
 const playerChoiceElement = document.getElementById("user-choice");
+const winState = document.getElementById("win-state");
+const rockChoice = document.getElementById("rock")
+const paperChoice = document.getElementById("paper")
+const scissorsChoice = document.getElementById("scissors")
 const rockSymbol = '<i class="fa-regular fa-hand-back-fist"></i>';
 const paperSymbol = '<i class="fa-regular fa-hand"></i>';
 const scissorsSymbol = '<i class="fa-regular fa-hand-scissors"></i>';
 const defaultSymbol = '<i class="fa-solid fa-question"></i>';
-const winState = document.getElementById("win-state");
 
 let canPlay = true;
 
@@ -26,23 +29,22 @@ for (let button of buttons) {
         winState.classList.remove("win","lose", "draw");
         playerChoiceElement.classList.remove("winning-score", "losing-score");
         computerChoiceElement.classList.remove("winning-score", "losing-score");
-        
     });
 };
 
 function displayUserChoice(gameType) {
     if (gameType === "rock") {
         playerChoiceElement.innerHTML = rockSymbol;
-        document.getElementById("paper").classList.remove("active");
-        document.getElementById("scissors").classList.remove("active");
+        paperChoice.classList.remove("active");
+        scissorsChoice.classList.remove("active");
     } else if (gameType === "paper") {
         playerChoiceElement.innerHTML = paperSymbol;
-        document.getElementById("rock").classList.remove("active");
-        document.getElementById("scissors").classList.remove("active");
+        rockChoice.classList.remove("active");
+        scissorsChoice.classList.remove("active");
     } else if (gameType === "scissors") {
         playerChoiceElement.innerHTML = scissorsSymbol;
-        document.getElementById("paper").classList.remove("active");
-        document.getElementById("rock").classList.remove("active");
+        paperChoice.classList.remove("active");
+        rockChoice.classList.remove("active");
     }
 };
 
@@ -68,25 +70,17 @@ function runGame(gameType, computerChoice) {
         if (gameType === computerChoice) {
             winState.innerText = "DRAW";
             winState.classList.add("draw");
-        } else if (gameType === "rock" && computerChoice === "paper") {
+        } else if ((gameType === "rock" && computerChoice === "paper") || 
+            (gameType === "paper" && computerChoice === "scissors") || 
+            (gameType === "scissors" && computerChoice === "rock")) {
             winState.innerText = "LOSE";
             winState.classList.add("lose");
-        } else if (gameType === "rock" && computerChoice === "scissors") {
+        } else if ((gameType === "rock" && computerChoice === "scissors") || 
+            (gameType === "paper" && computerChoice === "rock") || 
+            (gameType === "scissors" && computerChoice === "paper")) {
             winState.innerText = "WIN";
             winState.classList.add("win");
-        } else if (gameType === "paper" && computerChoice === "rock") {
-            winState.innerText = "WIN";
-            winState.classList.add("win");
-        } else if (gameType === "paper" && computerChoice === "scissors") {
-            winState.innerText = "LOSE";
-            winState.classList.add("lose");
-        } else if (gameType === "scissors" && computerChoice === "rock") {
-            winState.innerText = "LOSE";
-            winState.classList.add("lose");
-        } else if (gameType === "scissors" && computerChoice === "paper") {
-            winState.innerText = "WIN";
-            winState.classList.add("win");
-        }    
+        }
     incrementScores();
     }, 2000);
 };
