@@ -30,6 +30,8 @@ for (let button of buttons) {
         winState.classList.remove("win","lose", "draw");
         playerChoiceElement.classList.remove("winning-score", "losing-score", "equal-score");
         computerChoiceElement.classList.remove("winning-score", "losing-score", "equal-score");
+        computerChoiceElement.style.borderColor = "#000";
+        playerChoiceElement.style.borderColor = "#000";
     });
 };
 
