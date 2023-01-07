@@ -17,6 +17,8 @@ for (let button of buttons) {
     button.addEventListener("click", function() {
         if (canPlay) {
             canPlay = false;
+            button.classList.add("active");
+            button.style.borderColor = "#000";
             let gameType = this.getAttribute("id");
             button.classList.add("active");
             button.style.borderColor = "#000";
@@ -26,7 +28,7 @@ for (let button of buttons) {
                 button.classList.remove("active");
                 button.style.borderColor = "#000";
                 canPlay = true;
-            }, 2000);
+            }, 700);
         }
         winState.innerHTML = defaultSymbol;
         winState.classList.remove("win","lose", "draw");
@@ -88,7 +90,7 @@ function runGame(gameType, computerChoice) {
             winState.style.borderColor = "#000";
         }
     incrementScores();
-    }, 2000);
+    }, 700);
 };
 
 function incrementScores() {

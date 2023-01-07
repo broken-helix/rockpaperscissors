@@ -77,16 +77,10 @@ h3 {
     color: #11890b;
 }
 
-.btn:hover {
+/*.btn:hover {
     color: #11890b;
     border-color: #000;
-}
-
-.btn:link {
-    text-decoration:none;
-    color: #000;
-    -webkit-tap-highlight-color: white;
-}
+}*/
 
 /* Game selection display area */
 .choices-area {
