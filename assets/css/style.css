@@ -18,16 +18,16 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 35px;
-    margin-top: 10px;
+    font-size: 2.188rem;
+    margin-top: 0.625rem;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 1.563rem;
 }
 
 /* Game area */
@@ -56,21 +56,21 @@ h3 {
 }
 
 .controls-area .fa-regular {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .weapons {
     display: flex;
-    margin: 10px 0 20px 0;
+    margin: 0.625rem 0 1.25rem 0;
 }
 
 .btn {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     background-color: #FBFEFB;
-    border: 5px solid;
-    margin: 0 10px;
+    border: 0.313rem solid;
+    margin: 0 0.625rem;
 }
 
 .btn:hover {
@@ -85,7 +85,7 @@ h3 {
 .choices-area {
     display: flex;
     justify-content: center;
-    margin: 0 0 20px 0;
+    margin: 0 0 1.25rem 0;
 }
 
 .halves {
@@ -94,22 +94,22 @@ h3 {
 }
 
 .halves h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .choices {
-    width: 120px;
-    height: 120px;
+    width: 7.5rem;
+    height: 7.5rem;
     border-radius: 50%;
-    border: 7px solid;
-    margin: 5px 20px;
+    border: 0.438rem solid;
+    margin: 0.313rem 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .choices .fa-regular, .choices .fa-solid {
-    font-size: 70px;
+    font-size: 4.375rem;
 }
 
 /* Points tally and game results area */
@@ -120,8 +120,8 @@ h3 {
 }
 
 .scores h3 {
-    font-size: 17px;
-    margin-bottom: 20px;
+    font-size: 1.063rem;
+    margin-bottom: 1.25rem;
 }
 
 .scores {
@@ -131,15 +131,15 @@ h3 {
 }
 
 #win-state {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
-    border: 5px solid;
-    margin: 5px 40px;
+    border: 0.313rem solid;
+    margin: 0.313rem 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-size: 2.188rem;
     font-weight: 700;
 }
 
@@ -162,8 +162,8 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width:  70px;
-    height: 80px;
+    width:  4.375rem;
+    height: 85rem;
     border-radius: 20%;
 }
 
@@ -182,175 +182,175 @@ h3 {
 /* Media Queries for responsive layout */
 @media screen and (min-width: 500px) {
     .btn {
-        width: 100px;
-        height: 100px;
-        border: 6px solid;
+        width: 6.25rem;
+        height: 6.25rem;
+        border: 0.375rem solid;
     }
 
     .controls-area .fa-regular {
-        font-size: 50px;
+        font-size: 3.125rem;
     }
 
     .choices {
-        width: 150px;
-        height: 150px;
-        border: 8px solid;
+        width: 9.375rem;
+        height: 9.375rem;
+        border: 0.5rem solid;
     }
 
     .choices .fa-regular, .choices .fa-solid {
-        font-size: 90px;
+        font-size: 5.625rem;
     }
 
     .points {
-        font-size: 80px;
-        border: 6px solid;
+        font-size: 5rem;
+        border: 0.375rem solid;
         margin: 5px;
-        width: 80px;
-        height: 90px;
+        width: 0.313rem;
+        height: 5.625rem;
     }
 
     #win-state {
-        width: 90px;
-        height: 90px;
-        border: 6px solid;
-        margin: 5px 40px;
-        font-size: 35px;
+        width: 5.625rem;
+        height: 5.625rem;
+        border: 0.375rem solid;
+        margin: 0.313rem 2.5rem;
+        font-size: 2.188rem;
     }
 
     h1 {
-        font-size: 60px;
+        font-size: 3.75rem;
     }
 
     h2 {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     h3 {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .halves h3 {
-        font-size: 25px;
+        font-size: 1.563rem;
     }
 
     .scores h3 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
 @media screen and (min-width: 600px) {
     .btn {
-        width: 120px;
-        height: 120px;
-        border: 8px solid;
+        width: 7.5rem;
+        height: 7.5rem;
+        border: 0.5rem solid;
     }
     
     .controls-area .fa-regular {
-        font-size: 60px;
+        font-size: 3.75rem;
     }
 
     .choices {
-        width: 180px;
-        height: 180px;
-        border: 10px solid;
+        width: 11.25rem;
+        height: 11.25rem;
+        border: 0.625rem solid;
     }
 
     .choices .fa-regular, .choices .fa-solid {
-        font-size: 110px;
+        font-size: 6.875rem;
     }
 
     .points {
-        font-size: 90px;
-        border: 8px solid;
-        margin: 5px;
-        width: 90px;
-        height: 100px;
+        font-size: 5.625rem;
+        border: 0.5rem solid;
+        margin: 0.313rem;
+        width: 5.625rem;
+        height: 6.25rem;
     }
 
     #win-state {
-        width: 100px;
-        height: 100px;
-        border: 8px solid;
-        margin: 5px 50px;
-        font-size: 40px;
+        width: 6.25rem;
+        height: 6.25rem;
+        border: 0.5rem solid;
+        margin: 0.313rem 3.125rem;
+        font-size: 2.5rem;
     }
 
     h1 {
-        font-size: 70px;
+        font-size: 4.375rem;
     }
 
     h2 {
-        font-size: 50px;
+        font-size: 3.125rem;
     }
 
     h3 {
-        font-size: 35px;
+        font-size: 2.188rem;
     }
 
     .halves h3 {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .scores h3 {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 }
 
 @media screen and (min-width: 750px) {
     .btn {
-        width: 160px;
-        height: 160px;
-        border: 10px solid;
+        width: 10rem;
+        height: 10rem;
+        border: 0.625rem solid;
     }
 
     .controls-area .fa-regular {
-        font-size: 90px;
+        font-size: 5.625rem;
     }
 
     .choices {
-        width: 240px;
-        height: 240px;
-        border: 12px solid;
+        width: 15rem;
+        height: 15rem;
+        border: 0.75rem solid;
     }
 
     .choices .fa-regular, .choices .fa-solid {
-        font-size: 150px;
+        font-size: 9.375rem;
     }
 
     .points {
-        font-size: 100px;
-        border: 10px solid;
-        margin: 5px;
-        width: 100px;
-        height: 110px;
+        font-size: 6.25rem;
+        border: 0.625rem solid;
+        margin: 0.313rem;
+        width: 6.25rem;
+        height: 6.875rem;
     }
 
     #win-state {
-        width: 110px;
-        height: 110px;
-        border: 10px solid;
-        margin: 5px 80px;
-        font-size: 45px;
+        width: 6.875rem;
+        height: 6.875rem;
+        border: 0.625rem solid;
+        margin: 0.313rem 5rem;
+        font-size: 2.813rem;
     }
 
     h1 {
-        font-size: 80px;
+        font-size: 5rem;
     }
 
     h2 {
-        font-size: 60px;
+        font-size: 3.75rem;
     }
 
     h3 {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     .halves h3 {
-        font-size: 35px;
+        font-size: 2.188rem;
     }
 
     .scores h3 {
-        font-size: 25px;
+        font-size: 1.563rem;
     }
 }
 
@@ -375,118 +375,118 @@ h3 {
 /* Responsive design for narrow screen sizes */
 @media screen and (max-width: 365px) {
     .btn {
-        width: 60px;
-        height: 60px;
-        border: 3px solid;
+        width: 3.75rem;
+        height: 3.75rem;
+        border: 0.188rem solid;
     }
 
     .controls-area .fa-regular {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .choices {
-        width: 75px;
-        height: 75px;
-        border: 3px solid;
-        margin: 5px 10px
+        width: 4.688rem;
+        height: 4.688rem;
+        border: 0.188rem solid;
+        margin: 0.313rem 0.625rem;
     }
 
     .choices .fa-regular, .choices .fa-solid {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     .points {
-        font-size: 50px;
-        border: 3px solid;
-        width: 50px;
-        height: 60px;
+        font-size: 3.125rem;
+        border: 0.188rem solid;
+        width: 3.125rem;
+        height: 3.75rem;
     }
 
     #win-state {
-        width: 60px;
-        height: 60px;
-        border: 3px solid;
-        margin: 5px 20px;
-        font-size: 25px;
+        width: 3.75rem;
+        height: 3.75rem;
+        border: 0.188rem solid;
+        margin: 0.313rem 1.25rem;
+        font-size: 1.563rem;
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     h2 {
-        font-size: 25px;
+        font-size: 1.563rem;
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .halves h3 {
-        font-size: 15px;
+        font-size: 0.938rem;
     }
 
     .scores h3 {
-        font-size: 15px;
+        font-size: 0.938rem;
     }  
 }
 
 /* Responsive design for narrow screen sizes */
 @media screen and (max-width: 300px) {
     .btn {
-        width: 50px;
-        height: 50px;
-        border: 2px solid;
-        margin: 3px;
+        width: 3.125rem;
+        height: 3.125rem;
+        border: 0.125rem solid;
+        margin: 0.188rem;
     }
 
     .controls-area .fa-regular {
-        font-size: 25px;
+        font-size: 1.563rem;
     }
 
     .choices {
-        width: 65px;
-        height: 65px;
-        border: 2px solid;
-        margin: 0 10px;
+        width: 4.063rem;
+        height: 4.063rem;
+        border: 0.125rem solid;
+        margin: 0 0.625rem;
     }
 
     .choices .fa-regular, .choices .fa-solid {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .points {
-        font-size: 35px;
-        border: 2px solid;
-        width: 35px;
-        height: 45px;
+        font-size: 2.188rem;
+        border: 0.125rem solid;
+        width: 2.188rem;
+        height: 2.813rem;
     }
 
     #win-state {
-        width: 45px;
-        height: 45px;
-        border: 2px solid;
-        font-size: 20px;
+        width: 2.183rem;
+        height: 2.183rem;
+        border: 0.125rem solid;
+        font-size: 1.25rem;
     }
 
     h1 {
-        font-size: 25px;
+        font-size: 1.562rem;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .halves h3 {
-        font-size: 15px;
+        font-size: 0.938rem;
     }
 
     .scores h3 {
-        font-size: 10px;
+        font-size: 0.625rem;
     }  
 }
 
