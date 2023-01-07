@@ -29,8 +29,8 @@ for (let button of buttons) {
         }
         winState.innerHTML = defaultSymbol;
         winState.classList.remove("win","lose", "draw");
-        playerChoiceElement.classList.remove("winning-score", "losing-score");
-        computerChoiceElement.classList.remove("winning-score", "losing-score");
+        playerChoiceElement.classList.remove("winning-score", "losing-score", "draw");
+        computerChoiceElement.classList.remove("winning-score", "losing-score", "draw");
     });
 };
 
@@ -107,6 +107,9 @@ function incrementScores() {
         computerChoiceElement.classList.add("winning-score");
         userScoreElement.style.borderColor = "#000";
         computerScoreElement.style.borderColor = "#000";
+    } else if (winState.innerText === "DRAW") {
+        playerChoiceElement.classList.add("draw");
+        computerChoiceElement.classList.add("draw");
     }
     if ((userScore === computerScore) && (userScore > 0)) {
         userScoreElement.classList.remove("winning-score", "losing-score");
