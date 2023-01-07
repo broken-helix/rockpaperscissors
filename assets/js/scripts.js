@@ -106,13 +106,13 @@ function incrementScores() {
         userScoreElement.classList.add("equal-score");
         computerScoreElement.classList.add("equal-score");
     } else if (userScore > computerScore) {
-        userScoreElement.classList.remove("winning-score", "losing-score");
-        computerScoreElement.classList.remove("winning-score", "losing-score");
+        userScoreElement.classList.remove("winning-score", "losing-score", "equal-score");
+        computerScoreElement.classList.remove("winning-score", "losing-score", "equal-score");
         userScoreElement.classList.add("winning-score");
         computerScoreElement.classList.add("losing-score");
     } else if (computerScore > userScore) {
-        userScoreElement.classList.remove("winning-score", "losing-score");
-        computerScoreElement.classList.remove("winning-score", "losing-score");
+        userScoreElement.classList.remove("winning-score", "losing-score", "equal-score");
+        computerScoreElement.classList.remove("winning-score", "losing-score", "equal-score");
         userScoreElement.classList.add("losing-score");
         computerScoreElement.classList.add("winning-score");
     }
