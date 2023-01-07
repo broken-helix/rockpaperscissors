@@ -169,6 +169,18 @@ h3 {
     border-radius: 20%;
 }
 
+.winning-score {
+    color: #21B619;
+}
+
+.losing-score {
+    color: #F72C25;
+}
+
+.equal-score {
+    color: #F7B32B;
+}
+
 /* Media Queries for responsive layout */
 @media screen and (min-width: 500px) {
     .btn {
