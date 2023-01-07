@@ -9,6 +9,7 @@ const rockSymbol = '<i class="fa-regular fa-hand-back-fist"></i>';
 const paperSymbol = '<i class="fa-regular fa-hand"></i>';
 const scissorsSymbol = '<i class="fa-regular fa-hand-scissors"></i>';
 const defaultSymbol = '<i class="fa-solid fa-question"></i>';
+const resetGame = document.getElementById("reset");
 
 let canPlay = true;
 
@@ -134,3 +135,20 @@ function incrementScores() {
         computerScoreElement.style.borderColor = "#000";
     }
 };
+
+resetGame.addEventListener("click", function() {
+    if (canPlay) {
+        canPlay = false;
+        document.getElementById("user-score").innerText = "0";
+        document.getElementById("user-score").classList.remove("winning-score", "losing-score", "equal-score")
+        document.getElementById("computer-score").innerText = "0";
+        document.getElementById("computer-score").classList.remove("winning-score", "losing-score", "equal-score")
+        winState.innerHTML = defaultSymbol;
+        winState.classList.remove("win","lose", "draw");
+        playerChoiceElement.classList.remove("winning-score", "losing-score", "draw");
+        computerChoiceElement.classList.remove("winning-score", "losing-score", "draw");
+        playerChoiceElement.innerHTML = defaultSymbol;
+        computerChoiceElement.innerHTML = defaultSymbol;     
+    }
+    canPlay = true;
+});
