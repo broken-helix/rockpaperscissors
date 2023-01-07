@@ -152,7 +152,7 @@ h3 {
 }
 
 .draw {
-    color: #F7B32B;
+    color: #40798C;
 }
 
 .points {
@@ -176,7 +176,7 @@ h3 {
 }
 
 .equal-score {
-    color: #F7B32B;
+    color: #40798C;
 }
 
 /* Media Queries for responsive layout */
@@ -354,8 +354,26 @@ h3 {
     }
 }
 
+@media screen and (min-width: 1000px) {
+    .game-area {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .game-area {
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .game-area {
+        width: 45%;
+    }
+}
+
 /* Responsive design for narrow screen sizes */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 365px) {
     .btn {
         width: 60px;
         height: 60px;
@@ -411,4 +429,69 @@ h3 {
     .scores h3 {
         font-size: 15px;
     }  
+}
+
+/* Responsive design for narrow screen sizes */
+@media screen and (max-width: 300px) {
+    .btn {
+        width: 50px;
+        height: 50px;
+        border: 2px solid;
+        margin: 3px;
+    }
+
+    .controls-area .fa-regular {
+        font-size: 25px;
+    }
+
+    .choices {
+        width: 65px;
+        height: 65px;
+        border: 2px solid;
+        margin: 0 10px;
+    }
+
+    .choices .fa-regular, .choices .fa-solid {
+        font-size: 30px;
+    }
+
+    .points {
+        font-size: 35px;
+        border: 2px solid;
+        width: 35px;
+        height: 45px;
+    }
+
+    #win-state {
+        width: 45px;
+        height: 45px;
+        border: 2px solid;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .halves h3 {
+        font-size: 15px;
+    }
+
+    .scores h3 {
+        font-size: 10px;
+    }  
+}
+
+@media screen and (max-width: 210px) {
+    .game-area {
+        width: 95%;
+    }
 }
