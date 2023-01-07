@@ -7,19 +7,26 @@ const scissorsSymbol = '<i class="fa-regular fa-hand-scissors"></i>';
 const defaultSymbol = '<i class="fa-solid fa-question"></i>';
 const winState = document.getElementById("win-state");
 
+let canPlay = true;
+
 for (let button of buttons) {
     button.addEventListener("click", function() {
-        let gameType = this.getAttribute("id");
-        button.classList.add("active");
-        runGame(gameType);
-        computerChoiceElement.innerHTML = defaultSymbol;
-        setTimeout(() => {
-            button.classList.remove("active");
-        }, 2000);
+        if (canPlay) {
+            canPlay = false;
+            let gameType = this.getAttribute("id");
+            button.classList.add("active");
+            runGame(gameType);
+            computerChoiceElement.innerHTML = defaultSymbol;
+            setTimeout(() => {
+                button.classList.remove("active");
+                canPlay = true;
+            }, 2000);
+        }
         winState.innerHTML = defaultSymbol;
         winState.classList.remove("win","lose", "draw");
         playerChoiceElement.classList.remove("winning-score", "losing-score");
         computerChoiceElement.classList.remove("winning-score", "losing-score");
+        
     });
 };
 
@@ -100,7 +107,6 @@ function incrementScores() {
         computerChoiceElement.classList.add("winning-score");
     }
     if ((userScore === computerScore) && (userScore > 0)) {
-        console.log(userScore);
         userScoreElement.classList.remove("winning-score", "losing-score");
         computerScoreElement.classList.remove("winning-score", "losing-score");
         userScoreElement.classList.add("equal-score");
