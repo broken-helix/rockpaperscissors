@@ -32,7 +32,7 @@ h3 {
 
 /* Game area */
 .game-area {
-    background-color: #E6ECF0;
+    background-color: #E1CE7A;
     box-sizing: border-box;
     width: 85%;
     margin-left: auto;
@@ -68,17 +68,18 @@ h3 {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    background-color: #FBFEFB;
-    border: 0.313rem solid;
+    background-color: #fff;
+    border: 0.313rem solid #000;
     margin: 0 0.625rem;
 }
 
-.btn:hover {
-    color: #40798C;
+.active {
+    color: #11890b;
 }
 
-.active {
-    color: #21B619;
+.btn:hover {
+    color: #11890b;
+    border-color: #000;
 }
 
 /* Game selection display area */
@@ -106,6 +107,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
 }
 
 .choices .fa-regular, .choices .fa-solid {
@@ -141,18 +143,22 @@ h3 {
     align-items: center;
     font-size: 2.188rem;
     font-weight: 700;
+    background-color: #fff;
 }
 
 .win {
-    color: #21B619;
+    color: #11890b;
+    border-color: #000;
 }
 
 .lose {
-    color: #F72C25;
+    color: #e82121;
+    border-color: #000;
 }
 
 .draw {
-    color: #40798C;
+    color: #a86500;
+    border-color: #000;
 }
 
 .points {
@@ -165,18 +171,22 @@ h3 {
     width:  4.375rem;
     height: 85rem;
     border-radius: 20%;
+    background-color: #fff;
 }
 
 .winning-score {
-    color: #21B619;
+    color: #11890b;
+    border-color: #000;
 }
 
 .losing-score {
-    color: #F72C25;
+    color: #e82121;
+    border-color: #000;
 }
 
 .equal-score {
-    color: #40798C;
+    color: #a86500;
+    border-color: #000;
 }
 
 /* Media Queries for responsive layout */
@@ -310,7 +320,7 @@ h3 {
     .choices {
         width: 15rem;
         height: 15rem;
-        border: 0.75rem solid;
+        border: 0.75rem solid #000;
     }
 
     .choices .fa-regular, .choices .fa-solid {
