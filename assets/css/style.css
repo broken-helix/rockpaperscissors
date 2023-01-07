@@ -534,6 +534,7 @@ h3 {
         height: 150px;
         border-radius: 50%;
         border-width: 0.438rem;
+        border-color: #000;
     }
     .choices .fa-regular, .choices .fa-solid {
         font-size: 90px;
