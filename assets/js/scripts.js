@@ -2,9 +2,6 @@ const buttons = document.getElementsByClassName("btn");
 const computerChoiceElement = document.getElementById("computer-choice");
 const playerChoiceElement = document.getElementById("user-choice");
 const winState = document.getElementById("win-state");
-const rockChoice = document.getElementById("rock")
-const paperChoice = document.getElementById("paper")
-const scissorsChoice = document.getElementById("scissors")
 const rockSymbol = '<i class="fa-regular fa-hand-back-fist"></i>';
 const paperSymbol = '<i class="fa-regular fa-hand"></i>';
 const scissorsSymbol = '<i class="fa-regular fa-hand-scissors"></i>';
@@ -28,14 +25,17 @@ for (let button of buttons) {
         }
         winState.innerHTML = defaultSymbol;
         winState.classList.remove("win","lose", "draw");
-        playerChoiceElement.classList.remove("winning-score", "losing-score", "equal-score");
-        computerChoiceElement.classList.remove("winning-score", "losing-score", "equal-score");
+        playerChoiceElement.classList.remove("win", "lose", "draw");
+        computerChoiceElement.classList.remove("win", "lose", "draw");
         computerChoiceElement.style.borderColor = "#000";
         playerChoiceElement.style.borderColor = "#000";
     });
 };
 
 function displayUserChoice(gameType) {
+    const rockChoice = document.getElementById("rock")
+    const paperChoice = document.getElementById("paper")
+    const scissorsChoice = document.getElementById("scissors")
     if (gameType === "rock") {
         playerChoiceElement.innerHTML = rockSymbol;
         paperChoice.classList.remove("active");
@@ -95,31 +95,31 @@ function incrementScores() {
     const computerScoreElement = document.getElementById("computer-score");
     if (winState.innerText === "WIN") {
         userScoreElement.innerText = ++userScore;
-        playerChoiceElement.classList.add("winning-score");
-        computerChoiceElement.classList.add("losing-score");
+        playerChoiceElement.classList.add("win");
+        computerChoiceElement.classList.add("lose");
     } else if (winState.innerText === "LOSE") {
         computerScoreElement.innerText = ++computerScore;
-        playerChoiceElement.classList.add("losing-score");
-        computerChoiceElement.classList.add("winning-score");
+        playerChoiceElement.classList.add("lose");
+        computerChoiceElement.classList.add("win");
     } else if (winState.innerText === "DRAW") {
         playerChoiceElement.classList.add("draw");
         computerChoiceElement.classList.add("draw");
     }
     if ((userScore === computerScore) && (userScore > 0)) {
-        userScoreElement.classList.remove("winning-score", "losing-score");
-        computerScoreElement.classList.remove("winning-score", "losing-score");
-        userScoreElement.classList.add("equal-score");
-        computerScoreElement.classList.add("equal-score");
+        userScoreElement.classList.remove("win", "lose");
+        computerScoreElement.classList.remove("win", "lose");
+        userScoreElement.classList.add("draw");
+        computerScoreElement.classList.add("draw");
     } else if (userScore > computerScore) {
-        userScoreElement.classList.remove("winning-score", "losing-score", "equal-score");
-        computerScoreElement.classList.remove("winning-score", "losing-score", "equal-score");
-        userScoreElement.classList.add("winning-score");
-        computerScoreElement.classList.add("losing-score");
+        userScoreElement.classList.remove("win", "lose", "draw");
+        computerScoreElement.classList.remove("win", "lose", "draw");
+        userScoreElement.classList.add("win");
+        computerScoreElement.classList.add("lose");
     } else if (computerScore > userScore) {
-        userScoreElement.classList.remove("winning-score", "losing-score", "equal-score");
-        computerScoreElement.classList.remove("winning-score", "losing-score", "equal-score");
-        userScoreElement.classList.add("losing-score");
-        computerScoreElement.classList.add("winning-score");
+        userScoreElement.classList.remove("win", "lose", "draw");
+        computerScoreElement.classList.remove("win", "lose", "draw");
+        userScoreElement.classList.add("lose");
+        computerScoreElement.classList.add("win");
     }
 };
 
@@ -139,15 +139,15 @@ resetGame.addEventListener("click", function() {
     if (canPlay) {
         canPlay = false;
         document.getElementById("user-score").innerText = "0";
-        document.getElementById("user-score").classList.remove("winning-score", "losing-score", "equal-score")
+        document.getElementById("user-score").classList.remove("win", "lose", "draw")
         document.getElementById("computer-score").innerText = "0";
-        document.getElementById("computer-score").classList.remove("winning-score", "losing-score", "equal-score")
+        document.getElementById("computer-score").classList.remove("win", "lose", "draw")
         winState.innerHTML = defaultSymbol;
         winState.classList.remove("win","lose", "draw");
-        playerChoiceElement.classList.remove("winning-score", "losing-score", "draw");
-        computerChoiceElement.classList.remove("winning-score", "losing-score", "draw");
+        playerChoiceElement.classList.remove("win", "lose", "draw");
+        computerChoiceElement.classList.remove("win", "lose", "draw");
         playerChoiceElement.innerHTML = defaultSymbol;
-        computerChoiceElement.innerHTML = defaultSymbol;     
+        computerChoiceElement.innerHTML = defaultSymbol;
     }
     canPlay = true;
 });

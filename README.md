@@ -62,7 +62,7 @@ Text
 The color scheme was designed to incorporate blues reds and greens, to indicate win and loss results, along with complementary colors.
 Colors were selected using the coolors color palette generator.  <br><br>
 
-![Coolors Palette](/docs/url.jpg)
+![Coolors Palette](/docs/url.jpg) https://coolors.co/11890b-e82121-f18f01-4c86a8-f4f1de
 ***
 
 ## **Typography**

@@ -170,21 +170,6 @@ h3 {
     background-color: #fff;
 }
 
-.winning-score {
-    color: #11890b;
-    border-color: #000;
-}
-
-.losing-score {
-    color: #e82121;
-    border-color: #000;
-}
-
-.equal-score {
-    color: #a86500;
-    border-color: #000;
-}
-
 #information {
     display: flex;
     justify-content: center;
@@ -200,6 +185,7 @@ h3 {
     padding: 0.313rem;
     margin: 0 1.25rem 1.25rem 0;
     background-color: #fff;
+    color: #000;
 }
 
 #reset {
@@ -211,6 +197,7 @@ h3 {
     padding: 0.313rem;
     margin: 0 0 1.25rem 1.25rem;
     background-color: #fff;
+    color: #000;
 }
 
 /* Media Queries for responsive layout */
@@ -510,9 +497,4 @@ h3 {
         border-width: 0.188rem;
         font-size: 1.563rem;
     }
-}
-
-/* iPad Pro landscape styling */
-@media all and (device-width: 1024px){
-  
 }
