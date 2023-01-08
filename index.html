@@ -8,6 +8,8 @@
     <meta name="keywords" content="rock paper scissors, game, rock, paper, scissors">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    
     <title>Rock, Paper, Scissors</title>
 </head>
 
@@ -77,8 +79,13 @@
                 </div>
             </div>
         </div>
-        <div>
-            <button type="reset" class="button" id="reset">Reset Game</button>
+        <div id="information">
+            <div>
+                <button type="alert" class="button" id="alert" onclick="howToPlay()">How to Play</button>
+            </div>
+            <div>
+                <button type="reset" class="button" id="reset">Reset Game</button>
+            </div>
         </div>
     </div>
 
@@ -87,5 +94,6 @@
 
 
     <script src="assets/js/scripts.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
