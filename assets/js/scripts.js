@@ -123,7 +123,7 @@ function incrementScores() {
     }
 };
 
-const sweetAlertText = "Select your choice from the 3 buttons.\n  The computer will pick a random choice.\n  Rock beats Scissors.\n  Paper beats Rock.\n  Scissors beats Paper";
+const sweetAlertText = "Select your choice from the 3 buttons, 'Rock', 'Paper, or 'Scissors.\n  The computer will pick a random choice.\n  Rock beats Scissors.\n  Paper beats Rock.\n  Scissors beats Paper.";
 
 function howToPlay() {
     Swal.fire({

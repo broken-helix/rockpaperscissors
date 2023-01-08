@@ -78,11 +78,6 @@ h3 {
     color: #11890b;
 }
 
-/*.btn:hover {
-    color: #11890b;
-    border-color: #000;
-}*/
-
 /* Game selection display area */
 .choices-area {
     display: flex;
@@ -196,7 +191,7 @@ h3 {
     align-items: center;
 }
 
-#reset {
+#alert {
     font-family: Smooch Sans, sans-serif;
     font-weight: bold;
     border: 0.125rem solid #000;
@@ -207,7 +202,7 @@ h3 {
     background-color: #fff;
 }
 
-#alert {
+#reset {
     font-family: Smooch Sans, sans-serif;
     font-weight: bold;
     border: 0.125rem solid #000;
