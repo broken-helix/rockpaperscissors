@@ -123,6 +123,18 @@ function incrementScores() {
     }
 };
 
+const sweetAlertText = "Select your choice from the 3 buttons.\n  The computer will pick a random choice.\n  Rock beats Scissors.\n  Paper beats Rock.\n  Scissors beats Paper";
+
+function howToPlay() {
+    Swal.fire({
+        icon:       "question",
+        titleText:  "How to Play",
+        text:       sweetAlertText,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "Let's Play!",
+    });
+};
+
 resetGame.addEventListener("click", function() {
     if (canPlay) {
         canPlay = false;

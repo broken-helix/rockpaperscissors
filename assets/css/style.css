@@ -190,10 +190,31 @@ h3 {
     border-color: #000;
 }
 
+#information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #reset {
+    font-family: Smooch Sans, sans-serif;
+    font-weight: bold;
     border: 0.125rem solid #000;
-    font-size: 0.625rem;
+    border-radius: 5%;
+    font-size: 1.25rem;
     padding: 0.313rem;
+    margin: 0 1.25rem 1.25rem 0;
+    background-color: #fff;
+}
+
+#alert {
+    font-family: Smooch Sans, sans-serif;
+    font-weight: bold;
+    border: 0.125rem solid #000;
+    border-radius: 5%;
+    font-size: 1.25rem;
+    padding: 0.313rem;
+    margin: 0 0 1.25rem 1.25rem;
     background-color: #fff;
 }
 
@@ -311,64 +332,6 @@ h3 {
 
     .scores h3 {
         font-size: 1.375rem;
-    }
-}
-
-@media screen and (min-width: 750px) {
-    .btn {
-        width: 10rem;
-        height: 10rem;
-        border-width: 0.625rem;
-    }
-
-    .controls-area .fa-regular {
-        font-size: 5.625rem;
-    }
-
-    .choices {
-        width: 15rem;
-        height: 15rem;
-        border-width: 0.75rem;
-    }
-
-    .choices .fa-regular, .choices .fa-solid {
-        font-size: 9.375rem;
-    }
-
-    .points {
-        font-size: 6.25rem;
-        border-width: 0.625rem;
-        margin: 0.313rem;
-        width: 6.25rem;
-        height: 6.875rem;
-    }
-
-    #win-state {
-        width: 6.875rem;
-        height: 6.875rem;
-        border-width: 0.625rem;
-        margin: 0.313rem 5rem;
-        font-size: 2.813rem;
-    }
-
-    h1 {
-        font-size: 5rem;
-    }
-
-    h2 {
-        font-size: 3.75rem;
-    }
-
-    h3 {
-        font-size: 2.5rem;
-    }
-
-    .halves h3 {
-        font-size: 2.188rem;
-    }
-
-    .scores h3 {
-        font-size: 1.563rem;
     }
 }
 
