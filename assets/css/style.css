@@ -1,5 +1,4 @@
 /* Google fonts script */
-/* Google fonts script */
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap');
 
 body {
@@ -19,6 +18,7 @@ body {
 
 h1 {
     font-size: 2.5rem;
+    color: #4C86A8;
 }
 
 h2 {
@@ -32,9 +32,10 @@ h3 {
 
 /* Game area */
 .game-area {
-    background-color: #DADADA;
+    background-color: #F4F1DE;
     box-sizing: border-box;
     width: 85%;
+    border-radius: 5%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -176,28 +177,24 @@ h3 {
     align-items: center;
 }
 
-#alert {
+#alert, #reset {
     font-family: Smooch Sans, sans-serif;
     font-weight: bold;
     border: 0.125rem solid #000;
     border-radius: 5%;
     font-size: 1.25rem;
     padding: 0.313rem;
-    margin: 0 1.25rem 1.25rem 0;
     background-color: #fff;
     color: #000;
+    border-radius: 8%;
+}
+
+#alert {
+    margin: 0 1.25rem 1.25rem 0;
 }
 
 #reset {
-    font-family: Smooch Sans, sans-serif;
-    font-weight: bold;
-    border: 0.125rem solid #000;
-    border-radius: 5%;
-    font-size: 1.25rem;
-    padding: 0.313rem;
     margin: 0 0 1.25rem 1.25rem;
-    background-color: #fff;
-    color: #000;
 }
 
 /* Media Queries for responsive layout */
