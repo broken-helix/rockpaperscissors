@@ -226,7 +226,7 @@ Colors were selected using the coolors color palette generator.  <br><br>
 
 I deployed the page on GitHub pages via the following procedure:
 ​
-1. From the project's [repository](https://github.com/broken-helix/url), go to the **Settings** tab.
+1. From the project's [repository](https://github.com/broken-helix/rockpaperscissors), go to the **Settings** tab.
 2. From the left-hand menu, select the **Pages** tab.
 3. Under the **Source** section, select the **Main** branch from the drop-down menu and click **Save**.
 4. A message is displayed to indicate a successful deployment to GitHub pages and provide the live link.
