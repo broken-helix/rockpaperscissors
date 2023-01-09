@@ -40,7 +40,6 @@ An alert box provides users with a guide on how to play the game.
     * [**Honorable mentions**](#honorable-mentions)
     * [**General reference**](#general-reference)
     * [**Content**](#content)
-    * [**Media**](#media)
 ***
 
 ## **Planning stage**
@@ -159,14 +158,18 @@ Colors were selected using the coolors color palette generator.  <br><br>
 #### *Game Result:*
 
 * The game result element shows a question mark when the page loads and as soon as a controls area button is pressed.  It then displays a text and colour indication of whether the game was won, lost or drawn.
+
+![Game Result Options](/docs/game-state-displays.jpg)
 ​
 #### *Information Area:*
 
-* The information area holds the buttons to reset the game back to the default state and to bring up an alert box which tells the player how to play the game and what the winning options are.
+* The information area, at the bottom of the game area, holds the buttons to reset the game back to the default state and to bring up an alert box which tells the player how to play the game and what the winning options are.
 
 #### *How To Play Button:*
 
-* The 'how to play' button uses an 'onclick' call in the html to call the function which displays the alert.
+* The 'how to play' button uses an 'onclick' call in the html to call the function which displays the alert.  Sweet Alert 2 was installed to handle the alert.
+
+![Sweet Alert Box](/docs/sweetalert2-box.jpg)
 
 #### *The Reset Button:*
 
@@ -238,13 +241,14 @@ The following technologies were employed in the creation of the site:
 - HTML
 - CSS
 - JS
+- SweetAlert2
 ***
 
 ## **Credits**
 
 ### **Honorable mentions**
 
-* 
+* Once again, I would like to thank my mentor, Richard Wells, who gave me some great insights into javascript and kept me motivated.
 ***
 
 ### **Content:**
@@ -253,6 +257,4 @@ The following technologies were employed in the creation of the site:
 
 * Icons for the social media links and why fly section were sourced from [Font Awesome](https://fontawesome.com/icons).
 
-### **Media:**
-
-* sources
+* The Sweet Alert box was installed from [Sweet Alert](https://sweetalert2.github.io/).
