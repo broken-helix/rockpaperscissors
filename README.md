@@ -242,6 +242,7 @@ The following technologies were employed in the creation of the site:
 - CSS
 - JS
 - SweetAlert2
+- Balsamiq Wireframes
 ***
 
 ## **Credits**
@@ -258,3 +259,5 @@ The following technologies were employed in the creation of the site:
 * Icons for the social media links and why fly section were sourced from [Font Awesome](https://fontawesome.com/icons).
 
 * The Sweet Alert box was installed from [Sweet Alert](https://sweetalert2.github.io/).
+
+* Wireframes were created using the [Balsamiq Wireframes](https://balsamiq.com/wireframes/) application.
