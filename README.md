@@ -196,13 +196,15 @@ Colors were selected using the coolors color palette generator.  <br><br>
 
 ![lighthouse Mobile Results](/docs/lighthouse-mobile.jpg)
 ​
-* Validators - The W3C validator was used to check both HTML and CSS, with the only error found that the validator didn't validate the google scripts code at the top of the CSS file.
+* Validators - The W3C validator was used to check both HTML and CSS, with the only error found that the validator didn't validate the google scripts code at the top of the CSS file.  JShint was utilised to check the javscript and some minor errors were found which do not affect the functionality of the site.
 
 ![HTML Validator](/docs/html-validation.jpg)
 
 ![CSS Validator](/docs/css-validation.jpg)
 
 ![CSS Validator Error](/docs/css-validation-error.jpg)
+
+![JS Validator Error](/docs/jshint-result.jpg)
 ***
 
 ## **Bugs**
@@ -210,6 +212,7 @@ Colors were selected using the coolors color palette generator.  <br><br>
 * Issue - When checking the site on an ipad, the buttons were displayed in blue and partial colour changes were noted on the choices elements.
 * Cause - It appears that safari requires the color to be explicitly expressed in the relevant parts of the CSS, rather than just in the body and the blue portions were a fallback colour.
 * Resolution -  The colours were specified in the relevant parts of the CSS.
+
 
 * Issue - When testing the site on an ipad, the game area extended beyond the viewport when holding in landscape view.
 * Cause - Chrome's dev tools did not precisely mimic the ipad.

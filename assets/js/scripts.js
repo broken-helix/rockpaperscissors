@@ -1,3 +1,4 @@
+// Declare global variables
 const buttons = document.getElementsByClassName("btn");
 const computerChoiceElement = document.getElementById("computer-choice");
 const playerChoiceElement = document.getElementById("user-choice");
@@ -7,9 +8,19 @@ const paperSymbol = '<i class="fa-regular fa-hand"></i>';
 const scissorsSymbol = '<i class="fa-regular fa-hand-scissors"></i>';
 const defaultSymbol = '<i class="fa-solid fa-question"></i>';
 const resetGame = document.getElementById("reset");
-
 let canPlay = true;
 
+/*
+Add event listener to Control Area buttons
+Disable buttons after selection made
+Highlight button pressed by adding .active class
+Add selection to gameType variable
+Call runGame function
+Reset computer choice element to question mark ready for choice to be displayed
+Remove highlight of button clicked
+Allow player to select a new option and start a new game
+Reset colours and symbols for next game, except for scores.
+*/
 for (let button of buttons) {
     button.addEventListener("click", function() {
         if (canPlay) {
@@ -32,6 +43,7 @@ for (let button of buttons) {
     });
 }
 
+// Displays the player's choice and removes highlights from buttons activated in previous game
 function displayUserChoice(gameType) {
     const rockChoice = document.getElementById("rock");
     const paperChoice = document.getElementById("paper");
@@ -51,6 +63,13 @@ function displayUserChoice(gameType) {
     }
 }
 
+/*
+Calculates a random number between 0 and 2
+Assigns random number to a game option
+Displays the computer choice icon
+Stores the result in a string to match player choices
+Returns result
+*/
 function calculateComputerChoice() {
     let computerChoice = Math.floor(Math.random() * 3);
     if (computerChoice === 0) {
@@ -66,6 +85,10 @@ function calculateComputerChoice() {
     return computerChoice;
 }
 
+/* 
+Runs the game and compares player and computer choices
+Sets the text within the WinState element
+*/
 function runGame(gameType, computerChoice) {
     displayUserChoice(gameType);
     setTimeout(() => {
@@ -88,6 +111,10 @@ function runGame(gameType, computerChoice) {
     }, 700);
 }
 
+/*
+Increments the player and computer scores
+Adds and removes classes to change the colours of scores, player and computer choices
+*/
 function incrementScores() {
     let userScore = parseInt(document.getElementById("user-score").innerText);
     let computerScore = parseInt(document.getElementById("computer-score").innerText);
@@ -123,8 +150,10 @@ function incrementScores() {
     }
 }
 
+// Variable to display the text in the alert box
 const sweetAlertText = "Select your choice from the 3 buttons, 'Rock', 'Paper, or 'Scissors.\n  The computer will pick a random choice.\n  Rock beats Scissors.\n  Paper beats Rock.\n  Scissors beats Paper.";
 
+// Sets the content for the sweetalert2 box
 function howToPlay() {
     Swal.fire({
         icon:       "question",
@@ -135,6 +164,7 @@ function howToPlay() {
     });
 }
 
+// Locks button while game is in progress, resets elements to question marks, scores to 0 and removes classes to return colours to default
 resetGame.addEventListener("click", function() {
     if (canPlay) {
         canPlay = false;
