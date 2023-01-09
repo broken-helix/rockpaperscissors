@@ -89,7 +89,7 @@ Colors were selected using the coolors color palette generator.  <br><br>
 ## **Typography**
 
 * The font used throughout the game was selected from Google Fonts.
-* A retro style computer font was desired, but most options seemed quite pixelated, so [Smooch sans](https://fonts.google.com/specimen/Smooch+Sans) was selected for it's more modern and smoother representation.
+* A retro style computer font was desired, but most options seemed quite pixelated, so [Smooch sans](https://fonts.google.com/specimen/Smooch+Sans) was selected for its more modern and smoother representation.
 
 ![Font selection](/docs/smooch-sans-font.jpg)
 ***
