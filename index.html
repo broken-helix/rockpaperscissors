@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +13,17 @@
     <link rel="stylesheet" href="sweetalert2.min.css">
     
     <title>Rock, Paper, Scissors</title>
+
 </head>
 
 <body>
 
     <h1>Rock, Paper, Scissors</h1>
 
+    <!-- Game area to hold the game sections -->
     <div class="game-area">
 
+        <!-- Buttons to select player option for game -->
         <div class="controls-area"><h2>Choose Your Weapon</h2>
             <div class="weapons">
                 <div class="thirds">
@@ -42,6 +47,7 @@
             </div>
         </div>
 
+        <!-- Area to display player choice and random computer choice -->
         <div class="choices-area">
             <div class="halves">
                 <div class="choices" id="user-choice">
@@ -56,7 +62,8 @@
                 <h3>Computer Choice</h3>
             </div>
         </div>
-
+        
+        <!-- Area to show who won the game and display points accumulated -->
         <div class="game-state-area">
             <div class="scores">
                 <div class="thirds">
@@ -79,6 +86,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Area to hold buttons to reset the game and scores and show an alert informing user how to play the game -->
         <div id="information">
             <div>
                 <button type="button" class="button" id="alert" onclick="howToPlay()">How to Play</button>
@@ -87,13 +96,16 @@
                 <button type="reset" class="button" id="reset">Reset Game</button>
             </div>
         </div>
+
     </div>
 
-    <!-- Font awesome script for icons -->
+    <!-- Font awesome javascript for icons -->
     <script src="https://kit.fontawesome.com/0ac18b6588.js" crossorigin="anonymous"></script>
-
-
+    <!-- Site javscript -->
     <script src="assets/js/scripts.js"></script>
+    <!-- Sweetalert2 javascript -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
+
 </html>

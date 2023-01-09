@@ -30,12 +30,12 @@ for (let button of buttons) {
         computerChoiceElement.style.borderColor = "#000";
         playerChoiceElement.style.borderColor = "#000";
     });
-};
+}
 
 function displayUserChoice(gameType) {
-    const rockChoice = document.getElementById("rock")
-    const paperChoice = document.getElementById("paper")
-    const scissorsChoice = document.getElementById("scissors")
+    const rockChoice = document.getElementById("rock");
+    const paperChoice = document.getElementById("paper");
+    const scissorsChoice = document.getElementById("scissors");
     if (gameType === "rock") {
         playerChoiceElement.innerHTML = rockSymbol;
         paperChoice.classList.remove("active");
@@ -49,10 +49,10 @@ function displayUserChoice(gameType) {
         paperChoice.classList.remove("active");
         rockChoice.classList.remove("active");
     }
-};
+}
 
 function calculateComputerChoice() {
-    computerChoice = Math.floor(Math.random() * 3);
+    let computerChoice = Math.floor(Math.random() * 3);
     if (computerChoice === 0) {
         computerChoiceElement.innerHTML = rockSymbol;
         computerChoice = "rock";
@@ -64,7 +64,7 @@ function calculateComputerChoice() {
         computerChoice = "scissors";
     }
     return computerChoice;
-};
+}
 
 function runGame(gameType, computerChoice) {
     displayUserChoice(gameType);
@@ -86,7 +86,7 @@ function runGame(gameType, computerChoice) {
         }
     incrementScores();
     }, 700);
-};
+}
 
 function incrementScores() {
     let userScore = parseInt(document.getElementById("user-score").innerText);
@@ -121,7 +121,7 @@ function incrementScores() {
         userScoreElement.classList.add("lose");
         computerScoreElement.classList.add("win");
     }
-};
+}
 
 const sweetAlertText = "Select your choice from the 3 buttons, 'Rock', 'Paper, or 'Scissors.\n  The computer will pick a random choice.\n  Rock beats Scissors.\n  Paper beats Rock.\n  Scissors beats Paper.";
 
@@ -133,15 +133,15 @@ function howToPlay() {
         confirmButtonColor: "#DD6B55",
         confirmButtonText: "Let's Play!",
     });
-};
+}
 
 resetGame.addEventListener("click", function() {
     if (canPlay) {
         canPlay = false;
         document.getElementById("user-score").innerText = "0";
-        document.getElementById("user-score").classList.remove("win", "lose", "draw")
+        document.getElementById("user-score").classList.remove("win", "lose", "draw");
         document.getElementById("computer-score").innerText = "0";
-        document.getElementById("computer-score").classList.remove("win", "lose", "draw")
+        document.getElementById("computer-score").classList.remove("win", "lose", "draw");
         winState.innerHTML = defaultSymbol;
         winState.classList.remove("win","lose", "draw");
         playerChoiceElement.classList.remove("win", "lose", "draw");
