@@ -6,7 +6,8 @@ The game is designed to be played by a single player, with the computer playing 
 Once the player selects an option, the computer selects a random choice and the selections are compared to see who won.
 The site increments the scores of player and computer and uses a colour system to highlight the winner and loser.
 An alert box provides users with a guide on how to play the game.
-​
+
+[View the live project here](https://broken-helix.github.io/rockpaperscissors/).
 
 ![Responsive Screenshot](/docs/am-i-responsive.jpg)
 ***
